@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">mr. Watts</string>
+    <string name="info_atividade">mr.Watts está ativo a</string>
+    <string name="callToAction">Completar um desafio!</string>
+</resources>
