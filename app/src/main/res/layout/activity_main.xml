@@ -135,9 +135,10 @@
         android:layout_below="@id/btn_callToAction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/avatar_3"
         android:layout_marginHorizontal="30dp"
     />
+
+    <!--MR WATTS GAUGE-->
 
 
 

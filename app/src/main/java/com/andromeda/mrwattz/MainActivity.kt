@@ -5,8 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.transition.Fade
 import android.view.Window
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.ImageButton
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -18,15 +21,22 @@ class MainActivity : AppCompatActivity() {
         val username : TextView = findViewById(R.id.text_username)
         username.setText("Gabriela Macieiro")
 
-        //Info: dias ativos
+        //Info:
         val qntDiasAtivo : TextView = findViewById(R.id.text_diasAtivo)
         qntDiasAtivo.setText(" 31 dias!")
-        //Info: recorde
+
         val qntDiasRecorde : TextView = findViewById(R.id.text_recorde)
         qntDiasRecorde.setText(" 32 dias ")
-        //Info: missoes
+
         val qntMissoes : TextView = findViewById(R.id.text_missoes)
         qntMissoes.setText(" 15")
+
+        //Watts
+        val watts : ImageView = findViewById(R.id.img_watts)
+        watts.setImageResource(R.drawable.avatar_1)
+        var levitate = AnimationUtils.loadAnimation(this, R.anim.levitate)
+        watts.startAnimation(levitate)
+        levitate.setRepeatCount(Animation.INFINITE)
 
         //NAVEGAÇÃO
         val btnOpenMission : ImageButton = findViewById(R.id.btn_missions)
