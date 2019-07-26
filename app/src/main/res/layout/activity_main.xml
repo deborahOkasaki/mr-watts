@@ -44,7 +44,7 @@
 
     <!--Watts info-->
     <LinearLayout
-            android:id="@+id/watts_info"
+            android:id="@+id/watts_atividade"
             android:layout_below="@id/header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -55,6 +55,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:text="@string/info_atividade"
+                android:textSize="16dp"
                 android:fontFamily="@font/raleway_regular"
         />
         <TextView
@@ -62,7 +63,52 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/yellow"
-                android:textSize="14dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/raleway_regular"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/watts_recorde"
+        android:layout_below="@id/watts_atividade"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/info_recorde"
+                android:textSize="16dp"
+                android:fontFamily="@font/raleway_regular"
+        />
+
+        <TextView
+            android:id="@+id/text_recorde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mainGreen"
+            android:textSize="16dp"
+            android:fontFamily="@font/raleway_regular"
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/info_missoes"
+                android:textSize="16dp"
+                android:fontFamily="@font/raleway_regular"
+        />
+
+        <TextView
+                android:id="@+id/text_missoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mainGreen"
+                android:textSize="16dp"
                 android:fontFamily="@font/raleway_regular"
         />
     </LinearLayout>
@@ -70,14 +116,14 @@
     <!--CALL TO ACTION-->
     <Button
         android:id="@+id/btn_callToAction"
-        android:layout_below="@id/watts_info"
+        android:layout_below="@id/watts_recorde"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_marginHorizontal="10dp"
         android:layout_marginVertical="20dp"
         android:background="@drawable/rounded_button"
         android:text="@string/callToAction"
-        android:textSize="14dp"
+        android:textSize="18dp"
         android:textColor="@color/white"
         android:textAllCaps="false"
         android:fontFamily="@font/raleway_regular"
@@ -85,7 +131,8 @@
 
     <!--MR WATTS-->
     <ImageView
-        android:layout_below="@id/watts_info"
+        android:id="@+id/img_watts"
+        android:layout_below="@id/btn_callToAction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/avatar_3"

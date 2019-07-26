@@ -14,12 +14,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //Header: username display
         val username : TextView = findViewById(R.id.text_username)
         username.setText("Gabriela Macieiro")
 
+        //Info: dias ativos
         val qntDiasAtivo : TextView = findViewById(R.id.text_diasAtivo)
-        qntDiasAtivo.setText(" 31 dias")
-
+        qntDiasAtivo.setText(" 31 dias!")
+        //Info: recorde
+        val qntDiasRecorde : TextView = findViewById(R.id.text_recorde)
+        qntDiasRecorde.setText(" 32 dias ")
+        //Info: missoes
+        val qntMissoes : TextView = findViewById(R.id.text_missoes)
+        qntMissoes.setText(" 15")
 
         //NAVEGAÇÃO
         val btnOpenMission : ImageButton = findViewById(R.id.btn_missions)
