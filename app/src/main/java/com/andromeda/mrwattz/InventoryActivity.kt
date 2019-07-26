@@ -3,6 +3,8 @@ package com.andromeda.mrwattz
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.transition.Fade
+import android.view.Window
 import android.widget.ImageButton
 import android.widget.TextView
 
@@ -20,12 +22,14 @@ class InventoryActivity : AppCompatActivity() {
         btnOpenMain.setOnClickListener{
             val intent = Intent(this, MainActivity :: class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         }
 
         val btnOpenMissions : ImageButton = findViewById(R.id.btn_missions)
         btnOpenMissions.setOnClickListener{
             val intent = Intent(this, MissionsActivity :: class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         }
     }
 }
