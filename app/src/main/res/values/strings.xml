@@ -1,7 +1,17 @@
 <resources>
     <string name="app_name">mr. Watts</string>
+
+    <!--LOGIN-->
+    <string name="input_username">email</string>
+    <string name="input_password">senha</string>
+    <string name="btn_login">Entrar</string>
+
+    <!--INFO - ATIVIDADE-->
     <string name="info_atividade">mr.Watts está ativo a</string>
     <string name="callToAction">Completar um desafio!</string>
+
+    <!--INFO - RECORDE/MISSOES-->
     <string name="info_recorde">recorde:</string>
     <string name="info_missoes">| missões cumpridas:</string>
+
 </resources>

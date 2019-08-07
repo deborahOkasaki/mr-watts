@@ -118,10 +118,10 @@
         android:id="@+id/btn_callToAction"
         android:layout_below="@id/watts_recorde"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
         android:layout_marginHorizontal="10dp"
         android:layout_marginVertical="20dp"
-        android:background="@drawable/rounded_button"
+        android:background="@drawable/rounded_button_yellow"
         android:text="@string/callToAction"
         android:textSize="18dp"
         android:textColor="@color/white"
@@ -130,20 +130,56 @@
     />
 
     <!--MR WATTS-->
-    <ImageView
-        android:id="@+id/img_watts"
-        android:layout_below="@id/btn_callToAction"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-    />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/btn_callToAction"
+    >
+        <ImageView
+                android:id="@+id/img_watts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+    </LinearLayout>
 
     <!--MR WATTS GAUGE-->
+    <View android:id="@+id/base_gauge"
+          android:layout_above="@id/menu"
+          android:layout_width="200dp"
+          android:layout_height="15dp"
+          android:layout_weight="100"
+          android:layout_marginLeft="80dp"
+          android:layout_marginBottom="40dp"
+          android:gravity="center"
+          android:background="@drawable/rounded_bar_white"
+    />
+    <View android:id="@+id/hp_gauge"
+          android:layout_above="@id/menu"
+          android:layout_width="200dp"
+          android:layout_height="15dp"
+          android:layout_weight="20"
+          android:layout_marginLeft="80dp"
+          android:layout_marginBottom="40dp"
+          android:background="@drawable/hp_gradient"
 
-
+    />
+    <TextView
+            android:id="@+id/points"
+            android:layout_above="@id/menu"
+            android:layout_toRightOf="@id/base_gauge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/mainGreen"
+            android:textSize="16dp"
+            android:fontFamily="@font/raleway_regular"
+    />
 
     <!--MENU-->
     <LinearLayout
+        android:id="@+id/menu"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

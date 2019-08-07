@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "148581090527",
+    "firebase_url": "https://mrwatts-8ee79.firebaseio.com",
+    "project_id": "mrwatts-8ee79",
+    "storage_bucket": "mrwatts-8ee79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148581090527:android:a421e702325fde47",
+        "android_client_info": {
+          "package_name": "com.andromeda.mrwattz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148581090527-l43isd7i7u1beks5po6te3job567mjag.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.andromeda.mrwattz",
+            "certificate_hash": "230f4a6d89d7dafe2cc5bdea43d8cda4d5bb779d"
+          }
+        },
+        {
+          "client_id": "148581090527-9chkp66prq8pfokeq5b60gljle7a2qak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5NBtxqP2-h4luXQzRLugWZBmphFVsPpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148581090527-9chkp66prq8pfokeq5b60gljle7a2qak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
