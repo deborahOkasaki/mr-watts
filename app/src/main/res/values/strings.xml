@@ -14,4 +14,9 @@
     <string name="info_recorde">recorde:</string>
     <string name="info_missoes">| missões cumpridas:</string>
 
+    <!--MISSOES -->
+    <string name="titulo_desafio">Desafios! Um passo de cada vez ^-^</string>
+    <string name="ds_desafio">Bora maratonar~ Quero dizer, de verdade!</string>
+    <string name="ds_cooldown">Dias para liberação: </string>
+
 </resources>
